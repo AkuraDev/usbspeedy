@@ -4,6 +4,13 @@ A tiny, minimal Windows app that shows the speed each connected USB device is **
 
 It's handy for spotting a USB 3 drive that's silently running at USB 2 speed because of a bad port or cable.
 
+<img width="803" height="366" alt="UsbSpeed_pQBklq0fbQ" src="https://github.com/user-attachments/assets/31d76dce-0436-4939-9d98-0fb8593a11b6" />
+
+
+
+
+
+
 ## Features
 
 - Lists every connected USB device with its name, VID:PID and negotiated speed (Low / Full / High / SuperSpeed / SuperSpeed+)
