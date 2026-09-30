@@ -25,24 +25,6 @@ Requires the [.NET 10 Desktop Runtime](https://dotnet.microsoft.com/download).
 
 > Windows SmartScreen may warn about an unsigned app the first time you run it. The full source is in this repo if you'd like to build it yourself.
 
-## Build from source
-
-Requires the [.NET 10 SDK](https://dotnet.microsoft.com/download).
-
-```
-git clone https://github.com/AkuraDev/usbspeedy.git
-cd usbspeedy
-dotnet run
-```
-
-To produce a single-file executable:
-
-```
-dotnet publish -c Release -r win-x64 --self-contained false -p:PublishSingleFile=true
-```
-
-The result is in `bin\Release\net10.0-windows\win-x64\publish\`.
-
 ## How it works
 
 The app enumerates USB hubs through SetupAPI, then queries each port with the same `DeviceIoControl` calls used by Microsoft's USBView sample (`IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX` and its `_V2` variant) to read the connection speed and whether the device is capable of SuperSpeed or faster.
