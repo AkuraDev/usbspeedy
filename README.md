@@ -25,8 +25,8 @@ Requires the [.NET 10 Desktop Runtime](https://dotnet.microsoft.com/download).
 Requires the [.NET 10 SDK](https://dotnet.microsoft.com/download).
 
 ```
-git clone https://github.com/AkuraDev/usbspeed.git
-cd UsbSpeed
+git clone https://github.com/AkuraDev/usbspeedy.git
+cd usbspeedy
 dotnet run
 ```
 
